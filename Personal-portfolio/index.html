@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Pala - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for footer social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>Angel Palacios</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle">☀️</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm a <span class="typed-text"></span></p>
+        <div class="wave"></div>
+    </section>
+
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <p>Hi, I'm Angel , a web developer with 3 years of experience in creating responsive and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks.</p>
+    </section>
+
+    <section id="portfolio" class="reveal">
+        <h2>My Work</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="cms">CMS</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-category="web">
+                <h3>E-commerce Site</h3>
+                <p>A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card" data-category="app">
+                <h3>Task Manager</h3>
+                <p>A task management app created with React and Node.js.</p>
+            </div>
+            <div class="project-card" data-category="cms">
+                <h3>Blog Platform</h3>
+                <p>A personal blog platform with a custom CMS.</p>
+            </div>
+            <div class="project-card" data-category="web">
+                <h3>Portfolio Site</h3>
+                <p>A dynamic portfolio website with modern animations.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+            
+    <footer class="new-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Angel Palacios</h4>
+            <p>Web Developer & UI Designer</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Angel Palacios. All rights reserved.</p>
+          <button id="back-to-top">Back to Top</button>
+        </div>
+      </footer>
+      
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
