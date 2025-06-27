@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Palacios - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3><a href="#" onclick="location.reload()"
+                    style="color: white; text-decoration: none; cursor: pointer;">Angel Palacios</a></h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle"><i class="fas fa-sun"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm a <span class="typed-text"></span></p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Angel, a web developer with 3 years of experience in creating responsive and user-friendly websites.
+            I specialize in HTML, CSS, JavaScript, and modern frameworks.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="games">Games</button>
+            <button class="filter-btn" data-filter="homelab">Homelab</button>
+        </div>
+        <div class="projects">
+
+
+            <div class="project" data-category="web">
+                <span class="status completed">Completed</span>
+                <h3>E-commerce Site</h3>
+                <p>A fully responsive e-commerce website with cart functionality and payment integration.</p>
+                <div class="tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Stripe API</span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                    <a href="#" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+
+            <div class="project" data-category="web">
+                <span class="status completed">Completed</span>
+                <h3>Portfolio Site</h3>
+                <p>This portfolio website you're viewing! Features dark mode and responsive design.</p>
+                <!-- EXAMPLE: Progress bar for in-progress projects -->
+                <div class="progress">
+                    <div class="progress-label">
+                        <span>Progress</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn btn-secondary">View Code</a>
+                    <a href="index.html" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+
+            <!-- ===== MOBILE/DESKTOP APPLICATIONS ===== -->
+
+            <div class="project" data-category="app">
+                <span class="status in-progress">In Progress</span>
+                <h3>Task Manager</h3>
+                <p>A comprehensive task management app with team collaboration and real-time updates.</p>
+                <!-- EXAMPLE: Progress bar -->
+                <div class="progress">
+                    <div class="progress-label">
+                        <span>Progress</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn btn-secondary">View Progress</a>
+                </div>
+            </div>
+
+            <div class="project" data-category="app">
+                <span class="status planned">Planned</span>
+                <h3>Weather App</h3>
+                <p>A React Native weather application with location services and forecasts.</p>
+                <div class="tech">
+                    <span>React Native</span>
+                    <span>Weather API</span>
+                </div>
+                <div class="actions">
+                    <!-- EXAMPLE: Disabled button for planned projects -->
+                    <span class="btn" style="background-color: #E5E7EB; color: #6B7280; cursor: not-allowed;">Coming
+                        Soon</span>
+                </div>
+            </div>
+
+            <!-- ===== CONTENT MANAGEMENT SYSTEMS ===== -->
+
+            <div class="project" data-category="cms">
+                <span class="status completed">Completed</span>
+                <h3>Blog Platform</h3>
+                <p>A modern blog platform with custom CMS and SEO optimization.</p>
+                <div class="tech">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                    <a href="#" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+
+            <div class="project" data-category="cms">
+                <span class="status in-progress">In Progress</span>
+                <h3>E-learning Platform</h3>
+                <p>A learning management system with video courses and progress tracking.</p>
+                <!-- EXAMPLE: Progress bar -->
+                <div class="progress">
+                    <div class="progress-label">
+                        <span>Progress</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="tech">
+                    <span>Laravel</span>
+                    <span>Vue.js</span>
+                    <span>MySQL</span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn btn-secondary">View Progress</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Angel Palacios</h4>
+                <p>Web Developer & UI Designer</p>
+                <p>Passionate about creating modern, responsive web experiences with clean code and intuitive design.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Angel Palacios. All rights reserved.</p>
+            <button id="back-to-top">
+                <i class="fas fa-arrow-up"></i> Back to Top
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</body>
+
+</html>
